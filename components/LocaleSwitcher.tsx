@@ -18,14 +18,14 @@ export default function LocaleSwitcher() {
           >
             {locale === 'en' ? (
               <Image
-                src='/flags/gb.svg'
+                src='/flags/en.svg'
                 alt='English'
                 height={24}
                 width={24}
               />
             ) : (
               <Image
-                src='/flags/rs.svg'
+                src='/flags/sr.svg'
                 alt='Serbian'
                 height={24}
                 width={24}
