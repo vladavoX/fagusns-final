@@ -8,7 +8,7 @@ const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'About', href: '/#about', current: false },
   { name: 'WhatWeDo', href: '/#whatwedo', current: false },
-  { name: 'Projects', href: '/#projects', current: false },
+  { name: 'OurWork', href: '/#ourwork', current: false },
   { name: 'Contact', href: '/#contact', current: false },
 ]
 
@@ -54,21 +54,21 @@ const Navbar = () => {
                     <Image
                       fill
                       src='logo.svg'
-                      alt='Your Company'
-                      priority={true}
+                      alt='FagusNS logo'
+                      priority
                     />
                   </div>
                   <div className='h-8 w-20 relative hidden lg:block'>
                     <Image
                       fill
                       src='logo.svg'
-                      alt='Your Company'
-                      priority={true}
+                      alt='FagusNS logo'
+                      priority
                     />
                   </div>
                 </div>
                 <div className='hidden sm:ml-6 sm:block'>
-                  <div className='flex space-x-2 md:space-x-4'>
+                  <div className='flex space-x-1 md:space-x-4'>
                     {navigation.map((item) => (
                       <Link
                         key={item.name}
