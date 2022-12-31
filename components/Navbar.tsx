@@ -1,13 +1,15 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { AiOutlineMenu, AiOutlineClose, AiOutlineBell } from 'react-icons/ai'
+import { Disclosure } from '@headlessui/react'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { useTranslations } from 'next-intl'
+
+import LocaleSwitcher from './LocaleSwitcher'
 
 const navigation = [
-  { name: 'Home', href: '#home', current: true },
-  { name: 'About', href: '#about', current: false },
-  { name: 'WhatWeDo', href: '#whatwedo', current: false },
-  { name: 'Projects', href: '#projects', current: false },
-  { name: 'Contact', href: '#contact', current: false },
+  { name: 'Home', href: '/', current: true },
+  { name: 'About', href: '/#about', current: false },
+  { name: 'WhatWeDo', href: '/#whatwedo', current: false },
+  { name: 'Projects', href: '/#projects', current: false },
+  { name: 'Contact', href: '/#contact', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -16,8 +18,11 @@ function classNames(...classes: string[]) {
 
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Navbar = () => {
+  const t = useTranslations('navbar')
+
   return (
     <Disclosure
       as='nav'
@@ -28,7 +33,6 @@ const Navbar = () => {
           <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
             <div className='relative flex h-16 items-center justify-between'>
               <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
-                {/* Mobile menu button*/}
                 <Disclosure.Button className='inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
                   <span className='sr-only'>Open main menu</span>
                   {open ? (
@@ -66,7 +70,7 @@ const Navbar = () => {
                 <div className='hidden sm:ml-6 sm:block'>
                   <div className='flex space-x-2 md:space-x-4'>
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
                         href={item.href}
                         className={classNames(
@@ -77,31 +81,14 @@ const Navbar = () => {
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
-                        {item.name}
-                      </a>
+                        {t(`${item.name}`)}
+                      </Link>
                     ))}
                   </div>
                 </div>
-              </div>
-              <div className='absolute inset-y-0 right-0 flex gap-2 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
-                <button className='relative h-8'>
-                  <Image
-                    src='/flags/rs.svg'
-                    alt='serbian flag'
-                    height={25}
-                    width={25}
-                    className='cursor-pointer'
-                  />
-                </button>
-                <button className='relative h-8'>
-                  <Image
-                    src='/flags/gb.svg'
-                    alt='united kingdom flag'
-                    height={25}
-                    width={25}
-                    className='cursor-pointer'
-                  />
-                </button>
+                <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
+                  <LocaleSwitcher />
+                </div>
               </div>
             </div>
           </div>
@@ -121,7 +108,7 @@ const Navbar = () => {
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
-                  {item.name}
+                  {t(`${item.name}`)}
                 </Disclosure.Button>
               ))}
             </div>
