@@ -3,6 +3,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { useTranslations } from 'next-intl'
 
 import LocaleSwitcher from './LocaleSwitcher'
+import logo from '../public/logo.svg'
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
@@ -53,7 +54,7 @@ const Navbar = () => {
                   <div className='h-8 w-20 relative block lg:hidden'>
                     <Image
                       fill
-                      src='logo.svg'
+                      src={logo}
                       alt='FagusNS logo'
                       priority
                     />
@@ -61,7 +62,7 @@ const Navbar = () => {
                   <div className='h-8 w-20 relative hidden lg:block'>
                     <Image
                       fill
-                      src='logo.svg'
+                      src={logo}
                       alt='FagusNS logo'
                       priority
                     />
