@@ -4,6 +4,7 @@ import { Inter } from '@next/font/google'
 import Navbar from '../components/Navbar'
 import Landing from '../components/Landing'
 import About from '../components/About'
+import WhatWeDo from '../components/WhatWeDo'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,6 +30,7 @@ export default function Home() {
       <main className='flex flex-col items-center justify-center min-h-screen'>
         <Landing />
         <About />
+        <WhatWeDo />
       </main>
     </>
   )
@@ -41,6 +43,7 @@ export const getStaticProps = async ({ locale }: any) => {
         ...require(`../messages/navbar/${locale}.json`),
         ...require(`../messages/landing/${locale}.json`),
         ...require(`../messages/about/${locale}.json`),
+        ...require(`../messages/what-we-do/${locale}.json`),
       },
     },
   }

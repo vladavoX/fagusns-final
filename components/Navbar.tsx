@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <Disclosure
       as='nav'
-      className='bg-gray-800 fixed left-0 right-0 top-0'
+      className='bg-gray-800 fixed left-0 right-0 top-0 z-50'
     >
       {({ open }) => (
         <>
