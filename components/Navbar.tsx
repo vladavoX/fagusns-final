@@ -51,22 +51,29 @@ const Navbar = () => {
               </div>
               <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-between'>
                 <div className='flex flex-shrink-0 items-center'>
-                  <div className='h-8 w-20 relative block lg:hidden'>
+                  <Link
+                    href='/'
+                    className='h-8 w-20 relative block lg:hidden'
+                  >
                     <Image
                       fill
                       src={logo}
                       alt='FagusNS logo'
                       priority
                     />
-                  </div>
-                  <div className='h-8 w-20 relative hidden lg:block'>
+                  </Link>
+
+                  <Link
+                    href='/'
+                    className='h-8 w-20 relative hidden lg:block'
+                  >
                     <Image
                       fill
                       src={logo}
                       alt='FagusNS logo'
                       priority
                     />
-                  </div>
+                  </Link>
                 </div>
                 <div className='hidden sm:ml-6 sm:block'>
                   <div className='flex space-x-1 md:space-x-4'>

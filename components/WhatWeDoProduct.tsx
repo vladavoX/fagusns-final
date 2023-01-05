@@ -13,8 +13,14 @@ interface Props {
 
 const WhatWeDoProduct = ({ product, t }: Props) => {
   return (
-    <div className='flex items-end justify-center w-full h-[500px] relative group cursor-pointer'>
+    <div
+      className='flex items-end justify-center w-full h-[500px] relative group cursor-pointer
+      shadow-lg shadow-black
+      rounded-lg overflow-hidden
+    '
+    >
       <Image
+        loading='lazy'
         style={{ objectFit: 'cover' }}
         fill
         sizes='(max-width: 640px) 100vw, 640px'
