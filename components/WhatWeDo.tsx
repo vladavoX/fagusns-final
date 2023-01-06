@@ -43,7 +43,10 @@ const products = [
 const WhatWeDo = () => {
   const t = useTranslations('what-we-do')
   return (
-    <article className='min-h-screen w-full flex flex-col items-center lg:items-start justify-center pt-8 lg:pt-20 lg:pb-20 md:px-4 lg:px-20 gap-8 bg-gray-100'>
+    <article
+      id='what-we-do'
+      className='min-h-screen w-full flex flex-col items-center lg:items-start justify-center pt-8 lg:pt-20 lg:pb-20 md:px-4 lg:px-20 gap-8 bg-gray-100'
+    >
       <h2 className='uppercase text-3xl md:text-4xl lg:text-5xl font-bold'>
         {t('title')}
       </h2>

@@ -1,25 +1,24 @@
 import { Disclosure } from '@headlessui/react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { useTranslations } from 'next-intl'
+import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 
 import LocaleSwitcher from './LocaleSwitcher'
 import logo from '../public/logo.svg'
 
 const navigation = [
-  { name: 'Home', href: '/', current: true },
-  { name: 'About', href: '/#about', current: false },
-  { name: 'WhatWeDo', href: '/#whatwedo', current: false },
-  { name: 'OurWork', href: '/#ourwork', current: false },
-  { name: 'Contact', href: '/#contact', current: false },
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/#about' },
+  { name: 'WhatWeDo', path: '/#what-we-do' },
+  { name: 'OurWork', path: '/#our-work' },
+  { name: 'Contact', path: '/#contact' },
 ]
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
-
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
 
 const Navbar = () => {
   const t = useTranslations('navbar')
@@ -80,14 +79,11 @@ const Navbar = () => {
                     {navigation.map((item) => (
                       <Link
                         key={item.name}
-                        href={item.href}
+                        href={item.path}
                         className={classNames(
-                          item.current
-                            ? 'bg-gray-900 text-white'
-                            : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
-                        aria-current={item.current ? 'page' : undefined}
                       >
                         {t(`${item.name}`)}
                       </Link>
@@ -107,14 +103,11 @@ const Navbar = () => {
                 <Disclosure.Button
                   key={item.name}
                   as='a'
-                  href={item.href}
+                  href={item.path}
                   className={classNames(
-                    item.current
-                      ? 'bg-gray-900 text-white'
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
-                  aria-current={item.current ? 'page' : undefined}
                 >
                   {t(`${item.name}`)}
                 </Disclosure.Button>
