@@ -22,7 +22,6 @@ function classNames(...classes: string[]) {
 
 const Navbar = () => {
   const t = useTranslations('navbar')
-
   return (
     <Disclosure
       as='nav'

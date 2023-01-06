@@ -1,0 +1,21 @@
+{
+  "our-work": {
+    "title": "Our Recent Work",
+    "button": "View All Work",
+    "project1": {
+      "title": "Closet",
+      "description": "Closet is a simple, easy to use, and beautiful way to organize your clothes. It's a great way to keep track of your clothes and make sure you never forget what you have.",
+      "image": "/our-work/project-1.jpg"
+    },
+    "project2": {
+      "title": "Living room",
+      "description": "Living room",
+      "image": "/our-work/project-2.jpg"
+    },
+    "project3": {
+      "title": "Closet for clothes",
+      "description": "asd",
+      "image": "/our-work/project-3.jpg"
+    }
+  }
+}

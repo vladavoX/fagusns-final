@@ -1,0 +1,21 @@
+{
+  "our-work": {
+    "title": "Naši poslednji projekti",
+    "button": "Pogledajte sve naše projekte",
+    "project1": {
+      "title": "Ormar za garderobu",
+      "description": "Ormar je jednostavan, lak za korišćenje i lep način da organizujete svoju odeću. To je odličan način da vodite evidenciju o svojoj odeći i da nikada ne zaboravite šta imate.",
+      "image": "/our-work/project-1.jpg"
+    },
+    "project2": {
+      "title": "Living room",
+      "description": "Living room",
+      "image": "/our-work/project-2.jpg"
+    },
+    "project3": {
+      "title": "Closet for clothes",
+      "description": "asd",
+      "image": "/our-work/project-3.jpg"
+    }
+  }
+}

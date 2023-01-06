@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import Landing from '../components/Landing'
 import About from '../components/About'
 import WhatWeDo from '../components/WhatWeDo'
+import OurWork from '../components/OurWork'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,6 +32,7 @@ export default function Home() {
         <Landing />
         <About />
         <WhatWeDo />
+        <OurWork />
       </main>
     </>
   )
@@ -44,6 +46,7 @@ export const getStaticProps = async ({ locale }: any) => {
         ...require(`../messages/landing/${locale}.json`),
         ...require(`../messages/about/${locale}.json`),
         ...require(`../messages/what-we-do/${locale}.json`),
+        ...require(`../messages/our-work/${locale}.json`),
       },
     },
   }
