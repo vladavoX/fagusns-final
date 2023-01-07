@@ -9,13 +9,15 @@
     },
     "project2": {
       "title": "Living room",
-      "description": "Living room",
+      "description": "Dnevni boravak je prostorija u stambenoj kući ili stanu u kojoj ljudi mogu da sede, opuste i druže. Dekor i dizajn dnevne sobe mogu se uveliko razlikovati, ali to je obično prostor koji odražava lični stil ljudi koji žive u kući.",
       "image": "/our-work/project-2.jpg"
     },
     "project3": {
-      "title": "Closet for clothes",
-      "description": "asd",
+      "title": "Kuhinja",
+      "description": "Kuhinja je prostorija ili prostor u kući ili drugom stanu gde se priprema i kuva hrana. Obično je opremljen nizom uređaja i alata koji pomažu u pripremi hrane, kao što su rerna, ploča za kuvanje, frižider i sudoper.",
       "image": "/our-work/project-3.jpg"
-    }
+    },
+    "see-more": "Pogledajte više na našem Instagram profilu",
+    "see-more-mobile": "Pogledajte više"
   }
 }

@@ -15,8 +15,8 @@ const WhatWeDoProduct = ({ product, t }: Props) => {
   return (
     <div
       className='flex items-end justify-center w-full h-[500px] relative group cursor-pointer
-      shadow-lg shadow-black
-      rounded-lg overflow-hidden
+      md:shadow-lg md:shadow-black
+      md:rounded-lg md:overflow-hidden
     '
     >
       <Image
@@ -29,7 +29,7 @@ const WhatWeDoProduct = ({ product, t }: Props) => {
       />
       <Link
         href={`/gallery${product.href}`}
-        className='transition-all h-16 group-hover:h-full text-xl flex justify-center items-center font-semibold uppercase absolute bg-gray-800 bg-opacity-80 text-gray-50 w-full'
+        className='transition-all h-16 group-hover:h-full text-xl flex justify-center items-center font-semibold uppercase absolute bg-gray-800 bg-opacity-80 text-gray-300 w-full'
       >
         {t(`${product.title}`)}
       </Link>

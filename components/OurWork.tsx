@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
+import { AiFillInstagram } from 'react-icons/ai'
 
 const projects = [
   {
@@ -24,18 +25,33 @@ const OurWork = () => {
   return (
     <article
       id='our-work'
-      className='bg-gray-900 min-h-screen w-full flex flex-col items-center lg:items-start justify-center pt-8 lg:pt-20 lg:pb-20 md:px-4 lg:px-20 gap-8'
+      className='bg-gray-900 min-h-screen w-full flex flex-col items-center lg:items-start justify-center py-8 lg:py-20 px-4 lg:px-20 gap-8'
     >
-      <h2 className='uppercase text-3xl md:text-4xl lg:text-5xl font-bold text-gray-50 text-center lg:text-left w-80'>
-        {t('title')}
-      </h2>
-      <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
+      <div className='w-full flex items-end justify-between'>
+        <h2 className='uppercase text-3xl md:text-4xl lg:text-5xl font-bold text-gray-50 text-center lg:text-left w-96'>
+          {t('title')}
+        </h2>
+        <a
+          target={'_blank'}
+          href='https://www.instagram.com//'
+          className='md:block hidden'
+        >
+          <button
+            className='bg-gray-50 text-gray-700 font-bold py-2 px-4 rounded-full
+        hover:bg-gray-700 hover:text-gray-50 transition duration-300 ease-in-out
+        '
+          >
+            {t('see-more')} <AiFillInstagram className='inline text-3xl' />
+          </button>
+        </a>
+      </div>
+      <div className='grid grid-cols-1 xl:grid-cols-3 gap-8'>
         {projects.map((project, index) => (
           <div
             key={index}
-            className='bg-gray-800 rounded-lg shadow-lg p-4 flex flex-col gap-4 w-full h-full'
+            className='bg-gray-700 rounded-lg shadow-lg p-4 flex flex-col gap-4 w-full h-full'
           >
-            <div className='h-96 w-full relative'>
+            <div className='h-96 lg:h-[500px] w-full relative'>
               <Image
                 src={t(`${project.image}`)}
                 alt={t(`${project.title}`)}
@@ -48,10 +64,22 @@ const OurWork = () => {
             <h3 className='text-xl font-bold text-gray-50'>
               {t(`${project.title}`)}
             </h3>
-            <p className='text-gray-50'>{t(`${project.description}`)}</p>
+            <p className='text-gray-300'>{t(`${project.description}`)}</p>
           </div>
         ))}
       </div>
+      <a
+        target={'_blank'}
+        href='https://www.instagram.com//'
+        className='md:hidden block'
+      >
+        <button
+          className='bg-gray-50 text-gray-700 font-bold py-2 px-4 rounded-full
+        hover:bg-gray-700 hover:text-gray-50 transition duration-300 ease-in-out'
+        >
+          {t('see-more-mobile')} <AiFillInstagram className='inline text-3xl' />
+        </button>
+      </a>
     </article>
   )
 }

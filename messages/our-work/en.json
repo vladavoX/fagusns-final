@@ -9,13 +9,15 @@
     },
     "project2": {
       "title": "Living room",
-      "description": "Living room",
+      "description": "A living room is a room in a residential house or apartment where people can sit, relax, and socialize. The decor and design of a living room can vary widely, but it is typically a space that reflects the personal style of the people who live in the home.",
       "image": "/our-work/project-2.jpg"
     },
     "project3": {
-      "title": "Closet for clothes",
-      "description": "asd",
+      "title": "Kitchen",
+      "description": "A kitchen is a room or area in a house or other dwelling where food is prepared and cooked. It is typically equipped with a range of appliances and tools to help with food preparation, such as an oven, stovetop, refrigerator, and sink.",
       "image": "/our-work/project-3.jpg"
-    }
+    },
+    "see-more": "See more on our Instagram profile",
+    "see-more-mobile": "See More"
   }
 }
