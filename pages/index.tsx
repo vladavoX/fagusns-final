@@ -6,6 +6,7 @@ import Landing from '../components/Landing'
 import About from '../components/About'
 import WhatWeDo from '../components/WhatWeDo'
 import OurWork from '../components/OurWork'
+import Contact from '../components/Contact'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -33,6 +34,7 @@ export default function Home() {
         <About />
         <WhatWeDo />
         <OurWork />
+        <Contact />
       </main>
     </>
   )
