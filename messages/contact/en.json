@@ -1,0 +1,22 @@
+{
+  "contact": {
+    "title": "Contact",
+    "firstname": "Firstname",
+    "firstnamePlaceholder": "Your name",
+    "lastname": "Lastname",
+    "lastnamePlaceholder": "Your lastname",
+    "email": "Email",
+    "emailPlaceholder": "Your email",
+    "phone": "Phone",
+    "phonePlaceholder": "Your phone",
+    "company": "Company",
+    "companyPlaceholder": "Your company",
+    "subject": "Subject",
+    "subjectPlaceholder": "Your subject",
+    "message": "Message",
+    "messagePlaceholder": "Your message",
+    "submit": "Submit",
+    "success": "Your message has been sent successfully",
+    "error": "An error occurred while sending your message"
+  }
+}

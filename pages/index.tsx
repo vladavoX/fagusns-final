@@ -7,6 +7,7 @@ import About from '../components/About'
 import WhatWeDo from '../components/WhatWeDo'
 import OurWork from '../components/OurWork'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -35,6 +36,7 @@ export default function Home() {
         <WhatWeDo />
         <OurWork />
         <Contact />
+        <Footer />
       </main>
     </>
   )
@@ -49,6 +51,7 @@ export const getStaticProps = async ({ locale }: any) => {
         ...require(`../messages/about/${locale}.json`),
         ...require(`../messages/what-we-do/${locale}.json`),
         ...require(`../messages/our-work/${locale}.json`),
+        ...require(`../messages/contact/${locale}.json`),
       },
     },
   }
