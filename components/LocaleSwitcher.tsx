@@ -10,28 +10,60 @@ export default function LocaleSwitcher() {
     <>
       {otherLocales?.map((locale) => {
         return (
-          <Link
-            key={locale}
-            href={{ pathname, query }}
-            as={asPath}
-            locale={locale}
-          >
+          <>
             {locale === 'en' ? (
-              <Image
-                src='/flags/en.svg'
-                alt='English'
-                height={24}
-                width={24}
-              />
+              <Link
+                key={1}
+                href={{
+                  pathname,
+                  query
+                }}
+                as={asPath}
+                locale={locale}
+              >
+                <Image
+                  src='/flags/en.svg'
+                  alt='English'
+                  height={24}
+                  width={24}
+                />
+              </Link>
+            ) : locale === 'ru' ? (
+              <Link
+                key={2}
+                href={{
+                  pathname,
+                  query
+                }}
+                as={asPath}
+                locale={locale}
+              >
+                <Image
+                  src='/flags/ru.svg'
+                  alt='English'
+                  height={24}
+                  width={24}
+                />
+              </Link>
             ) : (
-              <Image
-                src='/flags/sr.svg'
-                alt='Serbian'
-                height={24}
-                width={24}
-              />
+              <Link
+                key={3}
+                href={{
+                  pathname,
+                  query
+                }}
+                as={asPath}
+                locale={locale}
+              >
+                <Image
+                  src='/flags/sr.svg'
+                  alt='English'
+                  height={24}
+                  width={24}
+                />
+              </Link>
             )}
-          </Link>
+          </>
         )
       })}
     </>
