@@ -1,13 +1,21 @@
 import Image from 'next/image'
-import { AiOutlineClose } from 'react-icons/ai'
+import { AiOutlineClose, AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai'
 
 interface Props {
   setIsOpen: (isOpen: boolean) => void
-  selectedImage: string
-  setSelectedImage: (selectedImage: string) => void
+  src: string
+  selectedImage: number
+  setSelectedImage: (selectedImage: number) => void
+  images:
+    | {
+        id: number
+        src: string
+        alt: string
+      }[]
+    | undefined
 }
 
-const ImageModal = ({ setIsOpen, selectedImage, setSelectedImage }: Props) => {
+const ImageModal = ({ setIsOpen, images, src, selectedImage, setSelectedImage }: Props) => {
   return (
     <div
       className='
@@ -32,7 +40,7 @@ const ImageModal = ({ setIsOpen, selectedImage, setSelectedImage }: Props) => {
         '
     >
       <Image
-        src={selectedImage}
+        src={src}
         alt='Bathroom 1'
         fill
         className='object-contain'
@@ -48,7 +56,35 @@ const ImageModal = ({ setIsOpen, selectedImage, setSelectedImage }: Props) => {
         '
         onClick={() => {
           setIsOpen(false)
-          setSelectedImage('')
+          setSelectedImage(0)
+        }}
+      />
+      <AiOutlineArrowLeft
+        className={`
+          absolute
+          top-1/2
+          left-10
+          text-3xl
+          ${selectedImage === 1 ? 'text-gray-500' : 'text-white'}
+          cursor-pointer
+        `}
+        onClick={() => {
+          if (selectedImage === 1) return
+          setSelectedImage(selectedImage - 1)
+        }}
+      />
+      <AiOutlineArrowRight
+        className={`
+          absolute
+          top-1/2
+          right-10
+          text-3xl
+          ${selectedImage === images?.length ? 'text-gray-500' : 'text-white'}
+          cursor-pointer
+        `}
+        onClick={() => {
+          if (selectedImage === images?.length) return
+          setSelectedImage(selectedImage + 1)
         }}
       />
     </div>

@@ -101,7 +101,7 @@ const Navbar = () => {
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  as='a'
+                  as={Link}
                   href={item.path}
                   className={classNames(
                     'text-gray-300 hover:bg-gray-700 hover:text-white',

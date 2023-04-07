@@ -9,62 +9,76 @@ const galleryImages = [
     name: 'bathrooms',
     images: [
       {
+        id: 1,
         src: '/bathrooms/1.jpeg',
-        alt: 'Bathroom 1',
+        alt: 'Bathroom 1'
       },
       {
+        id: 2,
         src: '/bathrooms/2.jpeg',
-        alt: 'Bathroom 2',
+        alt: 'Bathroom 2'
       },
       {
+        id: 3,
         src: '/bathrooms/3.jpeg',
-        alt: 'Bathroom 3',
+        alt: 'Bathroom 3'
       },
       {
+        id: 4,
         src: '/bathrooms/4.jpeg',
-        alt: 'Bathroom 4',
+        alt: 'Bathroom 4'
       },
       {
+        id: 5,
         src: '/bathrooms/5.jpeg',
-        alt: 'Bathroom 5',
+        alt: 'Bathroom 5'
       },
       {
+        id: 6,
         src: '/bathrooms/6.jpeg',
-        alt: 'Bathroom 6',
+        alt: 'Bathroom 6'
       },
       {
+        id: 7,
         src: '/bathrooms/7.jpeg',
-        alt: 'Bathroom 7',
+        alt: 'Bathroom 7'
       },
       {
+        id: 8,
         src: '/bathrooms/8.jpeg',
-        alt: 'Bathroom 8',
-      },
-    ],
+        alt: 'Bathroom 8'
+      }
+    ]
   },
   {
     name: 'bedrooms',
-    images: [],
-  },
+    images: []
+  }
 ]
 
 export const getStaticPaths = async () => {
   return {
     paths: [
-      { params: { gallery: 'bathrooms' } },
+      { params: { gallery: 'bathrooms' }, locale: 'en' },
       { params: { gallery: 'bathrooms' }, locale: 'sr' },
-      { params: { gallery: 'bedrooms' } },
+      { params: { gallery: 'bathrooms' }, locale: 'ru' },
+      { params: { gallery: 'bedrooms' }, locale: 'en' },
       { params: { gallery: 'bedrooms' }, locale: 'sr' },
-      { params: { gallery: 'closets' } },
+      { params: { gallery: 'bedrooms' }, locale: 'ru' },
+      { params: { gallery: 'closets' }, locale: 'en' },
       { params: { gallery: 'closets' }, locale: 'sr' },
-      { params: { gallery: 'kitchens' } },
+      { params: { gallery: 'closets' }, locale: 'ru' },
+      { params: { gallery: 'kitchens' }, locale: 'en' },
       { params: { gallery: 'kitchens' }, locale: 'sr' },
-      { params: { gallery: 'living-rooms' } },
+      { params: { gallery: 'kitchens' }, locale: 'ru' },
+      { params: { gallery: 'living-rooms' }, locale: 'en' },
       { params: { gallery: 'living-rooms' }, locale: 'sr' },
-      { params: { gallery: 'offices' } },
+      { params: { gallery: 'living-rooms' }, locale: 'ru' },
+      { params: { gallery: 'offices' }, locale: 'en' },
       { params: { gallery: 'offices' }, locale: 'sr' },
+      { params: { gallery: 'offices' }, locale: 'ru' }
     ],
-    fallback: false,
+    fallback: false
   }
 }
 
@@ -72,15 +86,15 @@ export const getStaticProps = async ({ locale }: any) => {
   return {
     props: {
       messages: {
-        ...require(`../../messages/navbar/${locale}.json`),
-      },
-    },
+        ...require(`../../messages/navbar/${locale}.json`)
+      }
+    }
   }
 }
 
 export default function Gallery() {
   const [isOpen, setIsOpen] = useState(false)
-  const [selectedImage, setSelectedImage] = useState('')
+  const [selectedImage, setSelectedImage] = useState(0)
   const router = useRouter()
   const { gallery } = router.query
   let images = galleryImages.find((item) => item.name === gallery)
@@ -100,10 +114,10 @@ export default function Gallery() {
               className='relative w-full h-96 rounded-md overflow-hidden shadow-lg shadow-black
               hover:shadow-2xl transition-shadow duration-300 ease-in-out cursor-pointer
               '
-              key={image.src}
+              key={image.id}
               onClick={() => {
                 setIsOpen(true)
-                setSelectedImage(image.src)
+                setSelectedImage(image.id)
               }}
             >
               <Image
@@ -120,6 +134,8 @@ export default function Gallery() {
         {isOpen && (
           <ImageModal
             setIsOpen={setIsOpen}
+            images={images?.images}
+            src={images?.images[selectedImage - 1].src as string}
             selectedImage={selectedImage}
             setSelectedImage={setSelectedImage}
           />

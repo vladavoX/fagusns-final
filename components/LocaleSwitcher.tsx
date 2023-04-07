@@ -8,12 +8,12 @@ export default function LocaleSwitcher() {
 
   return (
     <>
-      {otherLocales?.map((locale) => {
+      {otherLocales?.map((locale, index) => {
         return (
           <>
             {locale === 'en' ? (
               <Link
-                key={1}
+                key={index}
                 href={{
                   pathname,
                   query
@@ -30,7 +30,7 @@ export default function LocaleSwitcher() {
               </Link>
             ) : locale === 'ru' ? (
               <Link
-                key={2}
+                key={index}
                 href={{
                   pathname,
                   query
@@ -47,7 +47,7 @@ export default function LocaleSwitcher() {
               </Link>
             ) : (
               <Link
-                key={3}
+                key={index}
                 href={{
                   pathname,
                   query
