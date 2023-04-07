@@ -6,18 +6,18 @@ const projects = [
   {
     title: 'project1.title',
     description: 'project1.description',
-    image: 'project1.image',
+    image: 'project1.image'
   },
   {
     title: 'project2.title',
     description: 'project2.description',
-    image: 'project2.image',
+    image: 'project2.image'
   },
   {
     title: 'project3.title',
     description: 'project3.description',
-    image: 'project3.image',
-  },
+    image: 'project3.image'
+  }
 ]
 
 const OurWork = () => {
@@ -33,7 +33,8 @@ const OurWork = () => {
         </h2>
         <a
           target={'_blank'}
-          href='https://www.instagram.com//'
+          rel='noreferrer'
+          href='https://www.instagram.com/'
           className='md:block hidden'
         >
           <button
@@ -61,16 +62,15 @@ const OurWork = () => {
                 sizes='(max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, (max-width: 1536px) 1536px, 1920px'
               />
             </div>
-            <h3 className='text-xl font-bold text-gray-50'>
-              {t(`${project.title}`)}
-            </h3>
+            <h3 className='text-xl font-bold text-gray-50'>{t(`${project.title}`)}</h3>
             <p className='text-gray-300'>{t(`${project.description}`)}</p>
           </div>
         ))}
       </div>
       <a
         target={'_blank'}
-        href='https://www.instagram.com//'
+        rel='noreferrer'
+        href='https://www.instagram.com/'
         className='md:hidden block'
       >
         <button

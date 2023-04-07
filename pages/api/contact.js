@@ -2,9 +2,8 @@ import sgMail from '@sendgrid/mail'
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
-export default async (req, res) => {
-  const { firstname, lastname, company, email, phone, subject, message } =
-    req.body
+export const sendMessage = async (req, res) => {
+  const { firstname, lastname, company, email, phone, subject, message } = req.body
   const msg = {
     to: 'test@example.com',
     from: 'test@example.com',
@@ -12,7 +11,7 @@ export default async (req, res) => {
     html: `
       <h4>Ime i prezime: ${firstname} ${lastname}\nEmail: ${email}\nTelefon: ${phone}\nNaslov: ${subject}\nPoruka: ${message}</h4>
       <p>${message}</p>
-    `,
+    `
   }
 
   try {
