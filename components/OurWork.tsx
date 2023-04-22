@@ -31,7 +31,7 @@ const OurWork = () => {
         <h2 className='uppercase text-3xl md:text-4xl lg:text-5xl font-bold text-gray-50 text-center lg:text-left w-96'>
           {t('title')}
         </h2>
-        <a
+        {/* <a
           target={'_blank'}
           rel='noreferrer'
           href='https://www.instagram.com/'
@@ -44,7 +44,7 @@ const OurWork = () => {
           >
             {t('see-more')} <AiFillInstagram className='inline text-3xl' />
           </button>
-        </a>
+        </a> */}
       </div>
       <div className='grid grid-cols-1 xl:grid-cols-3 gap-8'>
         {projects.map((project, index) => (
@@ -62,7 +62,9 @@ const OurWork = () => {
                 sizes='(max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, (max-width: 1536px) 1536px, 1920px'
               />
             </div>
-            <h3 className='text-xl font-bold text-gray-50'>{t(`${project.title}`)}</h3>
+            <h3 className='text-xl font-bold text-gray-50'>
+              {t(`${project.title}`)}
+            </h3>
             <p className='text-gray-300'>{t(`${project.description}`)}</p>
           </div>
         ))}
