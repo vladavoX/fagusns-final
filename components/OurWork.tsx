@@ -69,7 +69,7 @@ const OurWork = () => {
           </div>
         ))}
       </div>
-      <a
+      {/* <a
         target={'_blank'}
         rel='noreferrer'
         href='https://www.instagram.com/'
@@ -81,7 +81,7 @@ const OurWork = () => {
         >
           {t('see-more-mobile')} <AiFillInstagram className='inline text-3xl' />
         </button>
-      </a>
+      </a> */}
     </article>
   )
 }
