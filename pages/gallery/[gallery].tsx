@@ -52,7 +52,293 @@ const galleryImages = [
   },
   {
     name: 'bedrooms',
-    images: []
+    images: [
+      {
+        id: 1,
+        src: '/bedrooms/1.jpeg',
+        alt: 'Bedroom 1'
+      },
+      {
+        id: 2,
+        src: '/bedrooms/2.jpeg',
+        alt: 'Bedroom 2'
+      },
+      {
+        id: 3,
+        src: '/bedrooms/3.jpeg',
+        alt: 'Bedroom 3'
+      },
+      {
+        id: 4,
+        src: '/bedrooms/4.jpeg',
+        alt: 'Bedroom 4'
+      },
+      {
+        id: 5,
+        src: '/bedrooms/5.jpeg',
+        alt: 'Bedroom 5'
+      },
+      {
+        id: 7,
+        src: '/bedrooms/7.jpeg',
+        alt: 'Bedroom 7'
+      },
+      {
+        id: 8,
+        src: '/bedrooms/8.jpeg',
+        alt: 'Bedroom 8'
+      },
+      {
+        id: 9,
+        src: '/bedrooms/9.jpeg',
+        alt: 'Bedroom 9'
+      },
+      {
+        id: 10,
+        src: '/bedrooms/10.jpeg',
+        alt: 'Bedroom 10'
+      },
+      {
+        id: 11,
+        src: '/bedrooms/11.jpeg',
+        alt: 'Bedroom 11'
+      },
+      {
+        id: 12,
+        src: '/bedrooms/12.jpeg',
+        alt: 'Bedroom 12'
+      },
+      {
+        id: 13,
+        src: '/bedrooms/13.jpeg',
+        alt: 'Bedroom 13'
+      },
+      {
+        id: 14,
+        src: '/bedrooms/14.jpeg',
+        alt: 'Bedroom 14'
+      },
+      {
+        id: 15,
+        src: '/bedrooms/15.jpeg',
+        alt: 'Bedroom 15'
+      },
+      {
+        id: 16,
+        src: '/bedrooms/16.jpeg',
+        alt: 'Bedroom 16'
+      },
+      {
+        id: 17,
+        src: '/bedrooms/17.jpeg',
+        alt: 'Bedroom 17'
+      },
+      {
+        id: 18,
+        src: '/bedrooms/18.jpeg',
+        alt: 'Bedroom 18'
+      },
+      {
+        id: 19,
+        src: '/bedrooms/19.jpeg',
+        alt: 'Bedroom 19'
+      },
+    ]
+  },
+  {
+    name: 'living-rooms',
+    images: [
+      {
+        id: 1,
+        src: '/living-rooms/1.jpeg',
+        alt: 'Living room 1'
+      },
+      {
+        id: 2,
+        src: '/living-rooms/2.jpeg',
+        alt: 'Living room 2'
+      },
+    ]
+  },
+  {
+    name: 'kitchens',
+    images: [
+      {
+        id: 1,
+        src: '/kitchens/1.jpeg',
+        alt: 'Kitchen 1'
+      },
+      {
+        id: 2,
+        src: '/kitchens/2.jpeg',
+        alt: 'Kitchen 2'
+      },
+      {
+        id: 3,
+        src: '/kitchens/3.jpeg',
+        alt: 'Kitchen 3'
+      },
+      {
+        id: 4,
+        src: '/kitchens/4.jpeg',
+        alt: 'Kitchen 4'
+      },
+      {
+        id: 5,
+        src: '/kitchens/5.jpeg',
+        alt: 'Kitchen 5'
+      },
+      {
+        id: 6,
+        src: '/kitchens/6.jpeg',
+        alt: 'Kitchen 6'
+      },
+      {
+        id: 7,
+        src: '/kitchens/7.jpeg',
+        alt: 'Kitchen 7'
+      },
+      {
+        id: 8,
+        src: '/kitchens/8.jpeg',
+        alt: 'Kitchen 8'
+      },
+      {
+        id: 9,
+        src: '/kitchens/9.jpeg',
+        alt: 'Kitchen 9'
+      },
+            {
+        id: 10,
+        src: '/kitchens/10.jpeg',
+        alt: 'Kitchen 10'
+      },
+      {
+        id: 11,
+        src: '/kitchens/11.jpeg',
+        alt: 'Kitchen 11'
+      },
+      {
+        id: 12,
+        src: '/kitchens/12.jpeg',
+        alt: 'Kitchen 12'
+      },
+      {
+        id: 13,
+        src: '/kitchens/13.jpeg',
+        alt: 'Kitchen 13'
+      },
+      {
+        id: 14,
+        src: '/kitchens/14.jpeg',
+        alt: 'Kitchen 14'
+      },
+      {
+        id: 15,
+        src: '/kitchens/15.jpeg',
+        alt: 'Kitchen 15'
+      },
+      {
+        id: 16,
+        src: '/kitchens/16.jpeg',
+        alt: 'Kitchen 16'
+      },
+      {
+        id: 17,
+        src: '/kitchens/17.jpeg',
+        alt: 'Kitchen 17'
+      },
+      {
+        id: 18,
+        src: '/kitchens/18.jpeg',
+        alt: 'Kitchen 18'
+      },
+    ]
+  },
+  {
+    name: 'offices',
+    images: [
+      {
+        id: 1,
+        src: '/offices/1.jpeg',
+        alt: 'Office 1'
+      },
+      {
+        id: 2,
+        src: '/offices/2.jpeg',
+        alt: 'Office 2'
+      },
+      {
+        id: 3,
+        src: '/offices/3.jpeg',
+        alt: 'Office 3'
+      },
+      {
+        id: 4,
+        src: '/offices/4.jpeg',
+        alt: 'Office 4'
+      },
+      {
+        id: 5,
+        src: '/offices/5.jpeg',
+        alt: 'Office 5'
+      },
+      {
+        id: 6,
+        src: '/offices/6.jpeg',
+        alt: 'Office 6'
+      },
+      {
+        id: 7,
+        src: '/offices/7.jpeg',
+        alt: 'Office 7'
+      },
+      {
+        id: 8,
+        src: '/offices/8.jpeg',
+        alt: 'Office 8'
+      },
+      {
+        id: 9,
+        src: '/offices/9.jpeg',
+        alt: 'Office 9'
+      },
+      {
+        id: 10,
+        src: '/offices/10.jpeg',
+        alt: 'Office 10'
+      },
+      {
+        id: 11,
+        src: '/offices/11.jpeg',
+        alt: 'Office 11'
+      },
+      {
+        id: 12,
+        src: '/offices/12.jpeg',
+        alt: 'Office 12'
+      },
+    ]
+  },
+  {
+    name: 'closets',
+    images: [
+      {
+        id: 1,
+        src: '/closets/1.jpeg',
+        alt: 'Closet 1'
+      },
+      {
+        id: 2,
+        src: '/closets/2.jpeg',
+        alt: 'Closet 2'
+      },
+      {
+        id: 3,
+        src: '/closets/3.jpeg',
+        alt: 'Closet 3'
+      },
+    ]
   }
 ]
 
