@@ -1,22 +1,23 @@
 {
-  "contact": {
-    "title": "Контакт",
-    "firstname": "Имя",
-    "firstnamePlaceholder": "Ваше имя",
-    "lastname": "Фамилия",
-    "lastnamePlaceholder": "Ваша фамилия",
-    "email": "Электронная почта",
-    "emailPlaceholder": "Ваш адрес электронной почты",
-    "phone": "Телефон",
-    "phonePlaceholder": "Ваш телефон",
-    "company": "Компания",
-    "companyPlaceholder": "Ваша компания",
-    "subject": "Предмет",
-    "subjectPlaceholder": "Ваш предмет",
-    "message": "Сообщение",
-    "messagePlaceholder": "Ваше сообщение",
-    "submit": "Представлять на рассмотрение",
-    "success": "Ваше сообщение было отправлено успешно",
-    "error": "Произошла ошибка при отправке вашего сообщения"
-  }
+	"contact": {
+		"title": "Контакт",
+		"firstname": "Имя",
+		"firstnamePlaceholder": "Ваше имя",
+		"lastname": "Фамилия",
+		"lastnamePlaceholder": "Ваша фамилия",
+		"email": "Электронная почта",
+		"emailPlaceholder": "Ваш адрес электронной почты",
+		"phone": "Телефон",
+		"phonePlaceholder": "Ваш телефон",
+		"company": "Компания",
+		"companyPlaceholder": "Ваша компания",
+		"subject": "Предмет",
+		"subjectPlaceholder": "Ваш предмет",
+		"message": "Сообщение",
+		"messagePlaceholder": "Ваше сообщение",
+		"submit": "Представлять на рассмотрение",
+		"success": "Ваше сообщение было отправлено успешно",
+		"error": "Произошла ошибка при отправке вашего сообщения",
+		"user": "Пользователь"
+	}
 }

@@ -1,22 +1,23 @@
 {
-  "contact": {
-    "title": "Kontakt",
-    "firstname": "Ime",
-    "firstnamePlaceholder": "Vaše ime",
-    "lastname": "Prezime",
-    "lastnamePlaceholder": "Vaše prezime",
-    "email": "E-mail",
-    "emailPlaceholder": "Vaša e-mail adresa",
-    "phone": "Telefon", 
-    "phonePlaceholder": "Vaš broj telefona",
-    "company": "Kompanija",
-    "companyPlaceholder": "Vaša kompanija",
-    "subject": "Naslov",
-    "subjectPlaceholder": "Naslov poruke",
-    "message": "Poruka",
-    "messagePlaceholder": "Vaša poruka",
-    "submit": "Pošalji",
-    "success": "Vaša poruka je uspešno poslata.",
-    "error": "Došlo je do greške prilikom slanja poruke. Molimo Vas pokušajte ponovo kasnije."
-  }
+	"contact": {
+		"title": "Kontakt",
+		"firstname": "Ime",
+		"firstnamePlaceholder": "Vaše ime",
+		"lastname": "Prezime",
+		"lastnamePlaceholder": "Vaše prezime",
+		"email": "E-mail",
+		"emailPlaceholder": "Vaša e-mail adresa",
+		"phone": "Telefon",
+		"phonePlaceholder": "Vaš broj telefona",
+		"company": "Kompanija",
+		"companyPlaceholder": "Vaša kompanija",
+		"subject": "Naslov",
+		"subjectPlaceholder": "Naslov poruke",
+		"message": "Poruka",
+		"messagePlaceholder": "Vaša poruka",
+		"submit": "Pošalji",
+		"success": "Vaša poruka je uspešno poslata.",
+		"error": "Došlo je do greške prilikom slanja poruke. Molimo Vas pokušajte ponovo kasnije.",
+		"user": "Korisnik"
+	}
 }
