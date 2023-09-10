@@ -31,11 +31,11 @@ const ContactNew = () => {
 					<div>
 						<p className='flex items-center gap-4 text-lg'>
 							<FaUserAlt />
-							Momcilo Popadic
+							{t('user_one')}
 						</p>
 						<p className='flex items-center gap-4 text-lg'>
 							<FaUserAlt />
-							Darko Popadic
+							{t('user_two')}
 						</p>
 					</div>
 				</div>
@@ -44,7 +44,7 @@ const ContactNew = () => {
 					<div>
 						<p className='flex items-center gap-4 text-lg'>
 							<MdEmail />
-							fagus021@gmail.com
+							fagusns021@gmail.com
 						</p>
 					</div>
 				</div>

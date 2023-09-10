@@ -18,6 +18,8 @@
 		"submit": "Pošalji",
 		"success": "Vaša poruka je uspešno poslata.",
 		"error": "Došlo je do greške prilikom slanja poruke. Molimo Vas pokušajte ponovo kasnije.",
-		"user": "Korisnik"
+		"user": "Korisnik",
+		"user_one": "Momčilo Popadić",
+		"user_two": "Darko Popadić"
 	}
 }

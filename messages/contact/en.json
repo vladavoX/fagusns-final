@@ -18,6 +18,8 @@
 		"submit": "Submit",
 		"success": "Your message has been sent successfully",
 		"error": "An error occurred while sending your message",
-		"user": "User"
+		"user": "User",
+		"user_one": "Momcilo Popadic",
+		"user_two": "Darko Popadic"
 	}
 }
