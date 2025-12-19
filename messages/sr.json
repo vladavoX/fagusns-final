@@ -1,0 +1,46 @@
+{
+  "about": {
+    "descOne": "Naša kompanija je specijalizovana za izradu visokokvalitetnog nameštaja od različitih materijala, uključujući ivericu, šperploču i puno drvo. Takođe ugrađujemo gvožđe u mnoge naše dizajne, dodajući moderan dodir i povećavajući izdržljivost naših komada. Naš tim osigurava da svaki komad koji proizvedemo ispunjava naše stroge standarde kvaliteta i pažnje posvećene detaljima.",
+    "descTwo": "Pored proizvodnje nameštaja, nudimo i besplatan prevoz za naše kupce. Bilo da vam je potreban samo jedan komad ili želite da opremite ceo dom ili kancelariju, imamo stručnost i resurse da oživimo vašu viziju."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Stupite u kontakt sa nama za prilagođena rešenja nameštaja prilagođena vašim potrebama. Bilo da imate pitanja, potrebnu ponudu ili želite da razgovarate o svom projektu, tu smo da pomognemo!",
+    "contactViaEmail": "Kontakt putem e-pošte"
+  },
+  "landing": {
+    "title": "Izrađujemo nameštaj po meri, vašoj želji i ideji.",
+    "subtitle": "Veliki ili mali, možemo dizajnirati od nule, obnoviti ili jednostavno nadograditi."
+  },
+  "navbar": {
+    "Home": "Početna",
+    "About": "O nama",
+    "WhatWeDo": "Šta radimo",
+    "Services": "Naše usluge",
+    "Contact": "Kontakt"
+  },
+  "what-we-do": {
+    "title": "Šta radimo",
+    "description": "Živa galerija koja prikazuje posvećenost, zanatstvo i kreativnost iza naših projekata.",
+    "seeAll": "Pogledajte sve",
+    "Bathroom": "Kupatilo",
+    "Bedroom": "Spavaća soba",
+    "Closet": "Ormar",
+    "Kitchen": "Kuhinja",
+    "LivingRoom": "Dnevna soba",
+    "Office": "Kancelarija"
+  },
+  "services": {
+    "title": "Naše usluge",
+    "customFurnitureDesign": "Dizajn nameštaja po meri",
+    "customFurnitureDesignDesc": "Prilagođena rešenja za nameštaj koja odgovaraju vašem jedinstvenom stilu i prostoru.",
+    "interiorRenovations": "Unutrašnje renovacije",
+    "interiorRenovationsDesc": "Transformacija prostora uz stručnu izradu i inovativni dizajn.",
+    "spacePlanningAndLayout": "Planiranje prostora i raspored",
+    "spacePlanningAndLayoutDesc": "Optimizacija vašeg prostora za funkcionalnost i estetski izgled.",
+    "materialSelectionAndSourcing": "Izbor materijala",
+    "materialSelectionAndSourcingDesc": "Kvalitetni materijali odabrani za povećanje izdržljivosti i stila.",
+    "projectManagement": "Upravljanje projektom",
+    "projectManagementDesc": "Sveobuhvatni nadzor kako bi se osigurala pravovremena i uspešna realizacija projekta."
+  }
+}
