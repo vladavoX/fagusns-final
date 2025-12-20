@@ -1,4 +1,14 @@
 {
+  "common": {
+    "prev": "Prev",
+    "next": "Next",
+    "close": "Close",
+    "photos": "photos",
+    "galleryViewer": "image viewer",
+    "closeGalleryViewer": "Close gallery viewer",
+    "prevImage": "Previous image",
+    "nextImage": "Next image"
+  },
   "about": {
     "descOne": "Our company specializes in the creation of high-quality furniture using a variety of materials, including chipboard, plywood, and solid wood. We also incorporate iron into many of our designs, adding a modern touch and increasing the durability of our pieces. Our team ensures that every piece we produce meets our strict standards for quality and attention to detail.",
     "descTwo": "In addition to the production of furniture, we also offer free transportation service for our customers. Whether you are in need of a single statement piece or are looking to furnish an entire home or office, we have the expertise and resources to bring your vision to life."
@@ -9,15 +19,24 @@
     "contactViaEmail": "Contact via Email"
   },
   "landing": {
-    "title": "We make wood custom furniture, based on your wish and idea.",
-    "subtitle": "Big or small, we can design from scratch, refubrish or simply upgrade."
+    "title": "We craft custom wooden furniture, based on your wishes and ideas.",
+    "subtitle": "Big or small, we can design from scratch, refurbish, or simply upgrade."
   },
   "navbar": {
     "Home": "Home",
     "About": "About",
     "WhatWeDo": "What we do",
     "Services": "Services",
-    "Contact": "Contact"
+    "Contact": "Contact",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "openMenu": "Open menu",
+    "toggleTheme": "Toggle theme"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "madeBy": "Website by Vladimir Aleksic"
   },
   "what-we-do": {
     "title": "What we do",
@@ -42,5 +61,9 @@
     "materialSelectionAndSourcingDesc": "High-quality materials sourced to enhance durability and style.",
     "projectManagement": "Project management",
     "projectManagementDesc": "Comprehensive oversight to ensure timely and successful project completion."
+  },
+  "seo": {
+    "title": "Custom Wooden Furniture & Interior Renovations | Fagus NS-021",
+    "description": "Custom wooden furniture design, interior renovations, and project management. Built-to-order wooden furniture by Fagus NS-021."
   }
 }

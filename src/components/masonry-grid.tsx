@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import { Button } from "./ui/button";
 
@@ -22,46 +22,46 @@ export default async function MasonryGrid() {
       <div className="h-100 sm:h-104 lg:h-100 xl:h-150 w-full relative lg:row-span-2 row-span-2">
         <Image
           src="/bathroom.jpeg"
-          alt=""
+          alt={t("Bathroom")}
           fill
-          objectFit="cover"
-          className="rounded-lg"
+          className="rounded-lg object-cover"
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
         />
       </div>
       <div className="h-100 sm:h-50 lg:h-50 xl:h-75 w-full rounded-lg relative lg:row-span-1 row-span-1">
         <Image
           src="/bedroom.jpeg"
-          alt=""
+          alt={t("Bedroom")}
           fill
-          objectFit="cover"
-          className="rounded-lg"
+          className="rounded-lg object-cover"
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
         />
       </div>
       <div className="h-100 sm:h-104 lg:h-100 xl:h-150 w-full rounded-lg relative lg:row-span-2 row-span-2">
         <Image
           src="/closet.jpg"
-          alt=""
+          alt={t("Closet")}
           fill
-          objectFit="cover"
-          className="rounded-lg"
+          className="rounded-lg object-cover"
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
         />
       </div>
       <div className="h-100 sm:h-50 lg:h-100 xl:h-150 w-full rounded-lg relative lg:row-span-2 row-span-1">
         <Image
           src="/kitchen.jpeg"
-          alt=""
+          alt={t("Kitchen")}
           fill
-          objectFit="cover"
-          className="rounded-lg"
+          className="rounded-lg object-cover"
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
         />
       </div>
       <div className="h-100 sm:h-50 lg:h-50 xl:h-75 w-full rounded-lg relative lg:row-span-1">
         <Image
           src="/office.jpeg"
-          alt=""
+          alt={t("Office")}
           fill
-          objectFit="cover"
-          className="rounded-lg"
+          className="rounded-lg object-cover"
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
         />
       </div>
     </div>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getLocale, getTranslations } from "next-intl/server";
 import { ModeToggle } from "./mode-toggle";
+import NavLink from "./nav-link";
 import { Button } from "./ui/button";
 import {
   DropdownMenu,
@@ -31,39 +32,25 @@ export default async function Navbar() {
           src="/logo.svg"
           alt="Logo FagusNS"
           width={100}
-          height={40}
-          className="hidden dark:block"
+          height={26}
+          className="h-6 w-auto hidden dark:block"
         />
         <Image
           src="/logo-dark.svg"
           alt="Logo FagusNS"
           width={100}
-          height={40}
-          className="dark:hidden block"
+          height={26}
+          className="h-6 w-auto dark:hidden block"
         />
         <div className="flex items-center gap-8 lg:gap-6 xl:gap-8">
           <ul className="flex items-center justify-end">
             {navigation.map((item) => (
               <li key={item.name}>
-                <Button asChild variant="link" size="sm">
-                  <Link href={item.path}>{t(item.name)}</Link>
-                </Button>
+                <NavLink href={item.path}>{t(item.name)}</NavLink>
               </li>
             ))}
           </ul>
           <ul className="flex items-center gap-2">
-            {locale !== "en" && (
-              <li>
-                <Link href="/en">
-                  <Image
-                    src="/flags/en.svg"
-                    alt="English"
-                    width={24}
-                    height={24}
-                  />
-                </Link>
-              </li>
-            )}
             {locale !== "sr" && (
               <li>
                 <Link href="/sr">
@@ -72,6 +59,20 @@ export default async function Navbar() {
                     alt="Srpski"
                     width={24}
                     height={24}
+                    className="size-6"
+                  />
+                </Link>
+              </li>
+            )}
+            {locale !== "en" && (
+              <li>
+                <Link href="/en">
+                  <Image
+                    src="/flags/en.svg"
+                    alt="English"
+                    width={24}
+                    height={24}
+                    className="size-6"
                   />
                 </Link>
               </li>
@@ -84,6 +85,7 @@ export default async function Navbar() {
                     alt="Русский"
                     width={24}
                     height={24}
+                    className="size-6"
                   />
                 </Link>
               </li>
@@ -94,40 +96,36 @@ export default async function Navbar() {
       </div>
 
       <div className="lg:hidden px-4 w-full flex items-center justify-between">
-        <Image src="/logo.svg" alt="Logo FagusNS" width={100} height={26} />
+        <Image
+          src="/logo.svg"
+          alt="Logo FagusNS"
+          width={100}
+          height={24}
+          className="h-6 w-auto dark:block hidden"
+        />
+        <Image
+          src="/logo-dark.svg"
+          alt="Logo FagusNS"
+          width={100}
+          height={24}
+          className="h-6 w-auto dark:hidden block"
+        />
         <div className="flex items-center gap-2">
           <ModeToggle />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="icon">
                 <MenuIcon className="h-[1.2rem] w-[1.2rem]" />
-                <span className="sr-only">Open menu</span>
+                <span className="sr-only">{t("openMenu")}</span>
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
               {navigation.map((item) => (
                 <DropdownMenuItem key={item.name}>
-                  <Button asChild variant="link" size="sm" key={item.name}>
-                    <Link href={item.path}>{t(item.name)}</Link>
-                  </Button>
+                  <NavLink href={item.path}>{t(item.name)}</NavLink>
                 </DropdownMenuItem>
               ))}
               <DropdownMenuSeparator />
-              {locale !== "en" && (
-                <DropdownMenuItem>
-                  <Button asChild variant="link" size="sm">
-                    <Link href="/en" className="flex items-center gap-2">
-                      <Image
-                        src="/flags/en.svg"
-                        alt="English"
-                        width={24}
-                        height={24}
-                      />
-                      English
-                    </Link>
-                  </Button>
-                </DropdownMenuItem>
-              )}
               {locale !== "sr" && (
                 <DropdownMenuItem>
                   <Button asChild variant="link" size="sm">
@@ -137,8 +135,25 @@ export default async function Navbar() {
                         alt="Srpski"
                         width={24}
                         height={24}
+                        className="size-6"
                       />
                       Srpski
+                    </Link>
+                  </Button>
+                </DropdownMenuItem>
+              )}
+              {locale !== "en" && (
+                <DropdownMenuItem>
+                  <Button asChild variant="link" size="sm">
+                    <Link href="/en" className="flex items-center gap-2">
+                      <Image
+                        src="/flags/en.svg"
+                        alt="English"
+                        width={24}
+                        height={24}
+                        className="size-6"
+                      />
+                      English
                     </Link>
                   </Button>
                 </DropdownMenuItem>
@@ -152,6 +167,7 @@ export default async function Navbar() {
                         alt="Русский"
                         width={24}
                         height={24}
+                        className="size-6"
                       />
                       Русский
                     </Link>

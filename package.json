@@ -1,13 +1,14 @@
 {
   "name": "fagusns-final",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write"
+    "check": "biome check .",
+    "check:write": "biome check . --write"
   },
   "dependencies": {
     "@masonry-grid/react": "^1.1.1",

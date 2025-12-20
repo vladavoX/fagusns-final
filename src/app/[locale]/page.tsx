@@ -10,6 +10,7 @@ import {
   RulerDimensionLine,
   User,
 } from "lucide-react";
+import type { Metadata } from "next";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import MasonryGrid from "@/components/masonry-grid";
@@ -44,16 +45,61 @@ const servicesList: {
   { key: "projectManagement", label: "Project Management", icon: PencilRuler },
 ];
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const tSeo = await getTranslations({ locale, namespace: "seo" });
+  const title = tSeo("title");
+  const description = tSeo("description");
+  const canonicalPath = `/${locale}`;
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: canonicalPath,
+      languages: {
+        sr: "/sr",
+        en: "/en",
+        ru: "/ru",
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      url: canonicalPath,
+    },
+    twitter: {
+      title,
+      description,
+      card: "summary_large_image",
+    },
+  };
+}
+
 export default async function Home() {
   const tLanding = await getTranslations("landing");
   const tAbout = await getTranslations("about");
   const tServices = await getTranslations("services");
   const tContact = await getTranslations("contact");
+  const tNav = await getTranslations("navbar");
+  const tFooter = await getTranslations("footer");
 
   return (
     <main className="flex min-h-screen w-full flex-col items-center justify-between sm:items-start">
       <section id="home" className="relative min-h-screen w-full">
-        <Image src="/hero.jpeg" alt="Hero image" fill objectFit="cover" />
+        <Image
+          src="/hero.jpeg"
+          alt={tLanding("title")}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
         <div className="absolute top-0 left-0 bottom-0 right-0 md:w-2/3 bg-black/50 text-white flex flex-col items-center justify-center p-4 gap-4">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold uppercase w-3/4 text-center md:text-left">
             {tLanding("title")}
@@ -68,6 +114,9 @@ export default async function Home() {
         className="flex min-h-screen w-full text-center text-lg md:text-xl lg:text-2xl font-semibold"
       >
         <div className="container mx-auto flex flex-col items-center justify-center p-4 gap-4 text-accent-foreground">
+          <h2 className="text-3xl xl:text-5xl font-semibold">
+            {tNav("About")}
+          </h2>
           <p>{tAbout("descOne")}</p>
           <p>{tAbout("descTwo")}</p>
         </div>
@@ -113,7 +162,7 @@ export default async function Home() {
               {tContact("description")}
             </p>
           </div>
-          <div className="flex gap-4 flex-wrap mt-4 items-stretch">
+          <address className="flex gap-4 flex-wrap mt-4 items-stretch not-italic">
             <Button size="lg" className="flex-1" asChild>
               <a
                 href="tel:+381659207542"
@@ -151,7 +200,7 @@ export default async function Home() {
               >
                 <div className="flex gap-2 items-center">
                   <Mail />
-                  <span>Contact via Email</span>
+                  <span>{tContact("contactViaEmail")}</span>
                 </div>
                 <div className="flex gap-2 items-center">
                   <AtSign />
@@ -159,12 +208,12 @@ export default async function Home() {
                 </div>
               </a>
             </Button>
-          </div>
+          </address>
         </div>
       </section>
       <footer className="w-full py-4 text-center text-sm">
-        &copy; {new Date().getFullYear()} Fagus NS-021 - All rights reserved.
-        Website by Vladimir Aleksic.
+        &copy; {new Date().getFullYear()} Fagus NS-021 -{" "}
+        {tFooter("rights")}. {tFooter("madeBy")}
       </footer>
     </main>
   );
