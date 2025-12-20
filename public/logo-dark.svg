@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68" height="18" viewBox="0 0 68 18" fill="none" transform="matrix(1, 0, 0, 1, 0, 0)">
+<rect y="2" width="2" height="12" fill="#000000"/>
+<path d="M0 2C0 0.895431 0.895431 0 2 0V0V2H0V2Z" fill="#000000"/>
+<rect x="2" width="6" height="2" fill="#000000"/>
+<rect x="2" y="7" width="5" height="2" fill="#000000"/>
+<path d="M9 4H16C17.1046 4 18 4.89543 18 6V6H9V4Z" fill="#000000"/>
+<path d="M16 6H18V12C18 13.1046 17.1046 14 16 14V14V6Z" fill="#000000"/>
+<path d="M9 12H16V14H11C9.89543 14 9 13.1046 9 12V12Z" fill="#000000"/>
+<rect x="9" y="10" width="2" height="2" fill="#000000"/>
+<path d="M9 10C9 8.89543 9.89543 8 11 8H16V10H9V10Z" fill="#000000"/>
+<path d="M19 6C19 4.89543 19.8954 4 21 4V4V14V14C19.8954 14 19 13.1046 19 12V6Z" fill="#000000"/>
+<path d="M21 4H26C27.1046 4 28 4.89543 28 6V6H21V4Z" fill="#000000"/>
+<rect x="26" y="6" width="2" height="7" fill="#000000"/>
+<rect x="21" y="12" width="5" height="2" fill="#000000"/>
+<path d="M26 13H28V16C28 17.1046 27.1046 18 26 18V18V13Z" fill="#000000"/>
+<rect x="19" y="16" width="7" height="2" fill="#000000"/>
+<path d="M29 4H31V14V14C29.8954 14 29 13.1046 29 12V4Z" fill="#000000"/>
+<path d="M31 12H38V12C38 13.1046 37.1046 14 36 14H31V12Z" fill="#000000"/>
+<rect x="36" y="4" width="2" height="8" fill="#000000"/>
+<path d="M39 6C39 4.89543 39.8954 4 41 4H48V6H39V6Z" fill="#000000"/>
+<path d="M39 12H48V12C48 13.1046 47.1046 14 46 14H39V12Z" fill="#000000"/>
+<rect x="46" y="10" width="2" height="2" fill="#000000"/>
+<path d="M39 8H46C47.1046 8 48 8.89543 48 10V10H41C39.8954 10 39 9.10457 39 8V8Z" fill="#000000"/>
+<rect x="39" y="6" width="2" height="2" fill="#000000"/>
+<path d="M59 2C59 0.895431 59.8954 0 61 0H68V2H59V2Z" fill="#000000"/>
+<path d="M59 12H68V12C68 13.1046 67.1046 14 66 14H59V12Z" fill="#000000"/>
+<rect x="66" y="8" width="2" height="4" fill="#000000"/>
+<path d="M59 6H66C67.1046 6 68 6.89543 68 8V8H61C59.8954 8 59 7.10457 59 6V6Z" fill="#000000"/>
+<rect x="59" y="2" width="2" height="4" fill="#000000"/>
+<rect x="49" width="2" height="14" fill="#000000"/>
+<rect x="56" width="2" height="14" fill="#000000"/>
+<path d="M56 10L51 0V4L56 14V10Z" fill="#000000"/>
+</svg>
