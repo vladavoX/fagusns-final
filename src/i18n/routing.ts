@@ -6,4 +6,7 @@ export const routing = defineRouting({
 
   // Used when no locale matches
   defaultLocale: "sr",
+
+  // Always default to Serbian instead of auto-detecting the browser locale
+  localeDetection: false,
 });
