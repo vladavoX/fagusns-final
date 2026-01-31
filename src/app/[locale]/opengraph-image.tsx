@@ -19,43 +19,41 @@ export default async function OpenGraphImage({
   const description = tSeo("description");
 
   return new ImageResponse(
-    (
+    <div
+      style={{
+        height: "100%",
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        backgroundColor: "#000",
+        color: "#fff",
+        padding: "80px",
+        gap: "28px",
+        fontFamily: "Arial, sans-serif",
+      }}
+    >
       <div
         style={{
-          height: "100%",
-          width: "100%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          backgroundColor: "#000",
-          color: "#fff",
-          padding: "80px",
-          gap: "28px",
-          fontFamily: "Arial, sans-serif",
+          fontSize: 64,
+          lineHeight: 1.1,
+          fontWeight: 700,
+          letterSpacing: "-0.02em",
         }}
       >
-        <div
-          style={{
-            fontSize: 64,
-            lineHeight: 1.1,
-            fontWeight: 700,
-            letterSpacing: "-0.02em",
-          }}
-        >
-          {title}
-        </div>
-        <div
-          style={{
-            fontSize: 28,
-            lineHeight: 1.4,
-            color: "rgba(255, 255, 255, 0.88)",
-            maxWidth: "1000px",
-          }}
-        >
-          {description}
-        </div>
+        {title}
       </div>
-    ),
-    size
+      <div
+        style={{
+          fontSize: 28,
+          lineHeight: 1.4,
+          color: "rgba(255, 255, 255, 0.88)",
+          maxWidth: "1000px",
+        }}
+      >
+        {description}
+      </div>
+    </div>,
+    size,
   );
 }

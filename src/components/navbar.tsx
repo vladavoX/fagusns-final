@@ -22,8 +22,10 @@ const navigation = [
 ];
 
 export default async function Navbar() {
-  const t = await getTranslations("navbar");
-  const locale = await getLocale();
+  const [t, locale] = await Promise.all([
+    getTranslations("navbar"),
+    getLocale(),
+  ]);
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 border-b border-border py-4 flex items-center justify-between bg-background backdrop-blur-sm">

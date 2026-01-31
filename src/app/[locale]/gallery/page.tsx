@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 import GalleryGrid from "../../../components/gallery-grid";
 
 export async function generateMetadata({
@@ -8,10 +9,14 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "what-we-do" });
-  const title = t("title");
-  const description = t("description");
+  const tSeo = await getTranslations({ locale, namespace: "seo" });
+  const title = tSeo("galleryTitle");
+  const description = tSeo("galleryDescription");
   const canonicalPath = `/${locale}/gallery`;
+  const alternateLocale = routing.locales.filter(
+    (routingLocale) => routingLocale !== locale,
+  );
+  const imageAlt = tSeo("ogImageAlt");
 
   return {
     title,
@@ -22,6 +27,7 @@ export async function generateMetadata({
         sr: "/sr/gallery",
         en: "/en/gallery",
         ru: "/ru/gallery",
+        "x-default": "/sr/gallery",
       },
     },
     openGraph: {
@@ -29,11 +35,28 @@ export async function generateMetadata({
       description,
       type: "website",
       url: canonicalPath,
+      siteName: "Fagus NS-021",
+      locale,
+      alternateLocale,
+      images: [
+        {
+          url: `/${locale}/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: imageAlt,
+        },
+      ],
     },
     twitter: {
       title,
       description,
       card: "summary_large_image",
+      images: [
+        {
+          url: `/${locale}/twitter-image`,
+          alt: imageAlt,
+        },
+      ],
     },
   };
 }

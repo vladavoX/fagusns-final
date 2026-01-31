@@ -16,6 +16,7 @@ import { getTranslations } from "next-intl/server";
 import MasonryGrid from "@/components/masonry-grid";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { routing } from "@/i18n/routing";
 
 const servicesList: {
   key: string;
@@ -55,6 +56,10 @@ export async function generateMetadata({
   const title = tSeo("title");
   const description = tSeo("description");
   const canonicalPath = `/${locale}`;
+  const alternateLocale = routing.locales.filter(
+    (routingLocale) => routingLocale !== locale,
+  );
+  const imageAlt = tSeo("ogImageAlt");
 
   return {
     title,
@@ -65,6 +70,7 @@ export async function generateMetadata({
         sr: "/sr",
         en: "/en",
         ru: "/ru",
+        "x-default": "/sr",
       },
     },
     openGraph: {
@@ -72,22 +78,42 @@ export async function generateMetadata({
       description,
       type: "website",
       url: canonicalPath,
+      siteName: "Fagus NS-021",
+      locale,
+      alternateLocale,
+      images: [
+        {
+          url: `/${locale}/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: imageAlt,
+        },
+      ],
     },
     twitter: {
       title,
       description,
       card: "summary_large_image",
+      images: [
+        {
+          url: `/${locale}/twitter-image`,
+          alt: imageAlt,
+        },
+      ],
     },
   };
 }
 
 export default async function Home() {
-  const tLanding = await getTranslations("landing");
-  const tAbout = await getTranslations("about");
-  const tServices = await getTranslations("services");
-  const tContact = await getTranslations("contact");
-  const tNav = await getTranslations("navbar");
-  const tFooter = await getTranslations("footer");
+  const [tLanding, tAbout, tServices, tContact, tNav, tFooter] =
+    await Promise.all([
+      getTranslations("landing"),
+      getTranslations("about"),
+      getTranslations("services"),
+      getTranslations("contact"),
+      getTranslations("navbar"),
+      getTranslations("footer"),
+    ]);
 
   return (
     <main className="flex min-h-screen w-full flex-col items-center justify-between sm:items-start">
@@ -212,8 +238,8 @@ export default async function Home() {
         </div>
       </section>
       <footer className="w-full py-4 text-center text-sm">
-        &copy; {new Date().getFullYear()} Fagus NS-021 -{" "}
-        {tFooter("rights")}. {tFooter("madeBy")}
+        &copy; {new Date().getFullYear()} Fagus NS-021 - {tFooter("rights")}.{" "}
+        {tFooter("madeBy")}
       </footer>
     </main>
   );
