@@ -1,9 +1,9 @@
+import type { LucideIcon } from "lucide-react";
 import {
   AtSign,
   BedDouble,
   BrickWall,
   Drill,
-  type LucideIcon,
   Mail,
   PencilRuler,
   Phone,
