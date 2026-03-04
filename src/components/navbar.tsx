@@ -35,6 +35,7 @@ export default async function Navbar() {
           alt="Logo FagusNS"
           width={100}
           height={26}
+          sizes="100px"
           className="h-6 w-auto hidden dark:block"
         />
         <Image
@@ -42,6 +43,7 @@ export default async function Navbar() {
           alt="Logo FagusNS"
           width={100}
           height={26}
+          sizes="100px"
           className="h-6 w-auto dark:hidden block"
         />
         <div className="flex items-center gap-8 lg:gap-6 xl:gap-8">
@@ -61,6 +63,7 @@ export default async function Navbar() {
                     alt="Srpski"
                     width={24}
                     height={24}
+                    sizes="24px"
                     className="size-6"
                   />
                 </Link>
@@ -74,6 +77,7 @@ export default async function Navbar() {
                     alt="English"
                     width={24}
                     height={24}
+                    sizes="24px"
                     className="size-6"
                   />
                 </Link>
@@ -87,6 +91,7 @@ export default async function Navbar() {
                     alt="Русский"
                     width={24}
                     height={24}
+                    sizes="24px"
                     className="size-6"
                   />
                 </Link>
@@ -103,6 +108,7 @@ export default async function Navbar() {
           alt="Logo FagusNS"
           width={100}
           height={24}
+          sizes="100px"
           className="h-6 w-auto dark:block hidden"
         />
         <Image
@@ -110,6 +116,7 @@ export default async function Navbar() {
           alt="Logo FagusNS"
           width={100}
           height={24}
+          sizes="100px"
           className="h-6 w-auto dark:hidden block"
         />
         <div className="flex items-center gap-2">
@@ -137,6 +144,7 @@ export default async function Navbar() {
                         alt="Srpski"
                         width={24}
                         height={24}
+                        sizes="24px"
                         className="size-6"
                       />
                       Srpski
@@ -153,6 +161,7 @@ export default async function Navbar() {
                         alt="English"
                         width={24}
                         height={24}
+                        sizes="24px"
                         className="size-6"
                       />
                       English
@@ -169,6 +178,7 @@ export default async function Navbar() {
                         alt="Русский"
                         width={24}
                         height={24}
+                        sizes="24px"
                         className="size-6"
                       />
                       Русский

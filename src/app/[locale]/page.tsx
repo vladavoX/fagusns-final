@@ -119,7 +119,7 @@ export default async function Home() {
     <main className="flex min-h-screen w-full flex-col items-center justify-between sm:items-start">
       <section id="home" className="relative min-h-screen w-full">
         <Image
-          src="/hero.jpeg"
+          src="/hero.webp"
           alt={tLanding("title")}
           fill
           priority

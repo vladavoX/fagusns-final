@@ -21,7 +21,7 @@ export default async function MasonryGrid() {
       </div>
       <div className="h-100 sm:h-104 lg:h-100 xl:h-150 w-full relative lg:row-span-2 row-span-2">
         <Image
-          src="/bathroom.jpeg"
+          src="/bathroom.webp"
           alt={t("Bathroom")}
           fill
           className="rounded-lg object-cover"
@@ -30,7 +30,7 @@ export default async function MasonryGrid() {
       </div>
       <div className="h-100 sm:h-50 lg:h-50 xl:h-75 w-full rounded-lg relative lg:row-span-1 row-span-1">
         <Image
-          src="/bedroom.jpeg"
+          src="/bedroom.webp"
           alt={t("Bedroom")}
           fill
           className="rounded-lg object-cover"
@@ -39,7 +39,7 @@ export default async function MasonryGrid() {
       </div>
       <div className="h-100 sm:h-104 lg:h-100 xl:h-150 w-full rounded-lg relative lg:row-span-2 row-span-2">
         <Image
-          src="/closet.jpg"
+          src="/closet.webp"
           alt={t("Closet")}
           fill
           className="rounded-lg object-cover"
@@ -48,7 +48,7 @@ export default async function MasonryGrid() {
       </div>
       <div className="h-100 sm:h-50 lg:h-100 xl:h-150 w-full rounded-lg relative lg:row-span-2 row-span-1">
         <Image
-          src="/kitchen.jpeg"
+          src="/kitchen.webp"
           alt={t("Kitchen")}
           fill
           className="rounded-lg object-cover"
@@ -57,7 +57,7 @@ export default async function MasonryGrid() {
       </div>
       <div className="h-100 sm:h-50 lg:h-50 xl:h-75 w-full rounded-lg relative lg:row-span-1">
         <Image
-          src="/office.jpeg"
+          src="/office.webp"
           alt={t("Office")}
           fill
           className="rounded-lg object-cover"
