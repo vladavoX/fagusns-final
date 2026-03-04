@@ -2,8 +2,10 @@ import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
+  experimental: {
+    optimizePackageImports: ["lucide-react", "@radix-ui/react-dropdown-menu"],
+  },
 };
 
 const withNextIntl = createNextIntlPlugin();
