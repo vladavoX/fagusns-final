@@ -19,14 +19,18 @@
     "contactViaEmail": "Kontakt putem e-pošte"
   },
   "landing": {
-    "title": "Izrađujemo nameštaj po meri, prema vašoj želji i ideji.",
-    "subtitle": "Veliki ili mali, možemo dizajnirati od nule, renovirati ili jednostavno unaprediti."
+    "title": "Nameštaj po meri i drveni radovi u Novom Sadu, rađeni prema vašem prostoru.",
+    "subtitle": "Kuhinje, plakari, kupatilski i spavaći nameštaj, kancelarijski elementi i enterijerski drveni radovi za domove i poslovne prostore u Novom Sadu i širom Srbije.",
+    "primaryCta": "Zatražite ponudu",
+    "secondaryCta": "Pogledajte radove",
+    "imageAlt": "Nameštaj po meri i drveni radovi Fagus NS-021 u Novom Sadu"
   },
   "navbar": {
     "Home": "Početna",
     "About": "O nama",
     "WhatWeDo": "Šta radimo",
     "Services": "Naše usluge",
+    "ServicePages": "Popularne usluge",
     "Contact": "Kontakt",
     "light": "Svetlo",
     "dark": "Tamno",
@@ -62,12 +66,36 @@
     "projectManagement": "Upravljanje projektom",
     "projectManagementDesc": "Sveobuhvatni nadzor kako bi se osigurala pravovremena i uspešna realizacija projekta."
   },
+  "home-seo": {
+    "introTitle": "Drveni radovi po meri za stanove, kuće i poslovne prostore",
+    "introOne": "Fagus NS-021 izrađuje kuhinje po meri, plakare, kupatilski i spavaći nameštaj, kancelarijske elemente i druge drvene radove prilagođene tačnim dimenzijama vašeg prostora.",
+    "introTwo": "Najviše projekata realizujemo u Novom Sadu, ali sarađujemo i sa klijentima širom Srbije kojima je potreban pouzdan nameštaj po meri, kvalitetna obrada i praktična podrška od ideje do montaže.",
+    "whyTitle": "Zašto klijenti biraju našu radionicu",
+    "reasonOneTitle": "Izrada po meri",
+    "reasonOneDescription": "Svaki komad prilagođavamo rasporedu, dimenzijama, potrebama za odlaganjem i stilu klijenta.",
+    "reasonTwoTitle": "Podrška kroz ceo projekat",
+    "reasonTwoDescription": "Pomažemo od prve ideje i merenja do izbora materijala, izrade, dostave i montaže.",
+    "reasonThreeTitle": "Radionica fokusirana na drvo",
+    "reasonThreeDescription": "Izrađujemo funkcionalan i dugotrajan nameštaj za svakodnevnu upotrebu, uz pažnju na završnu obradu i detalje.",
+    "serviceAreaTitle": "Radimo u Novom Sadu i širom Srbije",
+    "serviceAreaDescription": "Ako tražite nameštaj po meri u Novom Sadu, plakare, kuhinje po meri ili druge drvene radove za dom ili poslovni prostor, možemo preuzeti lokalne projekte i odabrane poslove širom Srbije.",
+    "faqTitle": "Česta pitanja",
+    "faqOneQuestion": "Da li izrađujete kuhinje po meri u Novom Sadu?",
+    "faqOneAnswer": "Da. Projektujemo i izrađujemo kuhinje po meri u Novom Sadu prema dimenzijama prostora, načinu korišćenja i materijalima koje želite.",
+    "faqTwoQuestion": "Da li pravite plakare i spavaći nameštaj po meri?",
+    "faqTwoAnswer": "Da. Izrađujemo plakare, ormare, spavaći nameštaj i druge ugradne elemente za stanove, kuće i poslovne prostore.",
+    "faqThreeQuestion": "Da li radite samo u Novom Sadu?",
+    "faqThreeAnswer": "Novi Sad nam je glavno područje rada, ali preuzimamo i odabrane projekte u drugim delovima Srbije, u zavisnosti od obima posla i logistike.",
+    "faqFourQuestion": "Mogu li da vam se javim i za druge drvene radove po meri?",
+    "faqFourAnswer": "Da. Ako projekat uključuje drvene elemente enterijera ili nameštaj po meri, pošaljite nam upit i zajedno ćemo proceniti najbolje rešenje.",
+    "schemaDescription": "Nameštaj po meri i drveni radovi u Novom Sadu: kuhinje, plakari, kupatilski i spavaći nameštaj, kancelarijski nameštaj i renovacije enterijera."
+  },
   "seo": {
-    "title": "Nameštaj po meri i renovacije enterijera | Fagus NS-021",
-    "description": "Dizajn nameštaja po meri, unutrašnje renovacije i upravljanje projektom. Nameštaj od drveta po meri – Fagus NS-021.",
-    "keywords": "nameštaj po meri, drveni nameštaj, kuhinje po meri, plakari po meri, renovacije enterijera, stolarska radionica, Novi Sad",
+    "title": "Nameštaj po meri i drveni radovi u Novom Sadu",
+    "description": "Nameštaj po meri i drveni radovi u Novom Sadu: kuhinje, plakari, kupatilski i spavaći nameštaj, kancelarijski nameštaj i renovacije enterijera – Fagus NS-021.",
+    "keywords": "nameštaj po meri Novi Sad, drveni radovi Novi Sad, kuhinje po meri Novi Sad, plakari po meri Novi Sad, drveni nameštaj Srbija, renovacije enterijera Novi Sad, stolarska radionica Novi Sad",
     "ogImageAlt": "Fagus NS-021 – nameštaj po meri i renovacije enterijera",
-    "galleryTitle": "Galerija radova | Fagus NS-021",
-    "galleryDescription": "Fotografije kuhinja, plakara, kupatila i drugih projekata nameštaja po meri – Fagus NS-021."
+    "galleryTitle": "Galerija radova",
+    "galleryDescription": "Fotografije kuhinja, plakara, kupatila, spavaćih soba, kancelarija i drugih projekata nameštaja po meri i drvenih radova – Fagus NS-021."
   }
 }

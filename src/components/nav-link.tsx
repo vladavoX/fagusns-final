@@ -1,6 +1,7 @@
 "use client";
 
-import { Link, usePathname } from "@/i18n/navigation";
+import Link from "next/link";
+import { usePathname } from "@/i18n/navigation";
 import { Button } from "./ui/button";
 
 export default function NavLink({
@@ -11,9 +12,7 @@ export default function NavLink({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-
-  const isGallery = pathname.includes("/gallery");
-  const finalHref = isGallery ? `/${href}` : href;
+  const finalHref = pathname === "/" ? href : `/${href}`;
 
   return (
     <Button asChild variant="link" size="sm">

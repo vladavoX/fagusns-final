@@ -19,14 +19,18 @@
     "contactViaEmail": "Contact via Email"
   },
   "landing": {
-    "title": "We craft custom wooden furniture, based on your wishes and ideas.",
-    "subtitle": "Big or small, we can design from scratch, refurbish, or simply upgrade."
+    "title": "Custom furniture and woodwork in Novi Sad, built around your space.",
+    "subtitle": "Kitchens, wardrobes, bathrooms, bedrooms, office furniture, and interior woodwork for homes and businesses across Novi Sad and Serbia.",
+    "primaryCta": "Request a quote",
+    "secondaryCta": "Browse our work",
+    "imageAlt": "Custom-made wooden furniture and interior woodwork by Fagus NS-021 in Novi Sad"
   },
   "navbar": {
     "Home": "Home",
     "About": "About",
     "WhatWeDo": "What we do",
     "Services": "Services",
+    "ServicePages": "Popular services",
     "Contact": "Contact",
     "light": "Light",
     "dark": "Dark",
@@ -62,12 +66,36 @@
     "projectManagement": "Project management",
     "projectManagementDesc": "Comprehensive oversight to ensure timely and successful project completion."
   },
+  "home-seo": {
+    "introTitle": "Custom woodwork for homes, apartments, and businesses",
+    "introOne": "Fagus NS-021 designs and builds made-to-measure kitchens, wardrobes, bathroom furniture, bedroom furniture, office elements, and other bespoke woodwork based on the exact dimensions of your space.",
+    "introTwo": "Most of our projects are in Novi Sad, but we also work with clients across Serbia who need reliable custom furniture, careful finishing, and practical design support from idea to installation.",
+    "whyTitle": "Why clients choose our workshop",
+    "reasonOneTitle": "Made to measure",
+    "reasonOneDescription": "Each piece is adapted to the layout, dimensions, storage needs, and style of the client.",
+    "reasonTwoTitle": "Full project support",
+    "reasonTwoDescription": "We can help from the initial idea and measurement to material selection, production, delivery, and fitting.",
+    "reasonThreeTitle": "Wood-focused craftsmanship",
+    "reasonThreeDescription": "We build practical, durable furniture for everyday use, with attention to finish, joinery, and long-term function.",
+    "serviceAreaTitle": "Based in Novi Sad, working across Serbia",
+    "serviceAreaDescription": "If you are looking for custom furniture in Novi Sad, built-in wardrobes, made-to-order kitchens, or other woodwork for a home or business, we can handle both local projects and selected jobs across Serbia.",
+    "faqTitle": "Frequently asked questions",
+    "faqOneQuestion": "Do you build custom kitchens in Novi Sad?",
+    "faqOneAnswer": "Yes. We design and build custom kitchens in Novi Sad based on the size of your room, the way you use the space, and the materials you prefer.",
+    "faqTwoQuestion": "Can you make built-in wardrobes and bedroom furniture?",
+    "faqTwoAnswer": "Yes. We make wardrobes, closets, bedroom furniture, and other built-in pieces tailored to apartments, houses, and commercial spaces.",
+    "faqThreeQuestion": "Do you work only in Novi Sad?",
+    "faqThreeAnswer": "Novi Sad is our main service area, but we also take on selected projects in other parts of Serbia depending on scope and logistics.",
+    "faqFourQuestion": "Can I contact you for custom woodwork outside standard furniture?",
+    "faqFourAnswer": "Yes. If your project involves wood-based interior elements or made-to-measure furniture, contact us and we can review the idea with you.",
+    "schemaDescription": "Custom furniture and woodwork in Novi Sad, including kitchens, wardrobes, bathroom furniture, bedroom furniture, office furniture, and interior renovations."
+  },
   "seo": {
-    "title": "Custom Wooden Furniture & Interior Renovations | Fagus NS-021",
-    "description": "Custom wooden furniture design, interior renovations, and project management. Built-to-order wooden furniture by Fagus NS-021.",
-    "keywords": "custom furniture, wooden furniture, custom kitchens, built-in wardrobes, interior renovations, carpentry workshop, Novi Sad",
+    "title": "Custom Furniture and Woodwork in Novi Sad",
+    "description": "Custom furniture and woodwork in Novi Sad: kitchens, wardrobes, bathroom furniture, bedroom furniture, office furniture, and interior renovations by Fagus NS-021.",
+    "keywords": "custom furniture Novi Sad, woodwork Novi Sad, custom kitchens Novi Sad, built-in wardrobes Novi Sad, wooden furniture Serbia, interior renovations Novi Sad, carpentry workshop Novi Sad",
     "ogImageAlt": "Fagus NS-021 – custom wooden furniture and interior renovations",
-    "galleryTitle": "Project Gallery | Fagus NS-021",
-    "galleryDescription": "Photo gallery of custom kitchens, wardrobes, bathrooms, and other made-to-measure projects by Fagus NS-021."
+    "galleryTitle": "Project Gallery",
+    "galleryDescription": "Photo gallery of custom kitchens, wardrobes, bathrooms, bedrooms, offices, and other made-to-measure woodwork by Fagus NS-021."
   }
 }

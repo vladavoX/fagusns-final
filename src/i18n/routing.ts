@@ -9,4 +9,13 @@ export const routing = defineRouting({
 
   // Always default to Serbian instead of auto-detecting the browser locale
   localeDetection: false,
+
+  pathnames: {
+    "/": "/",
+    "/gallery": {
+      sr: "/galerija-radova",
+      en: "/gallery",
+      ru: "/galereya-rabot",
+    },
+  },
 });
