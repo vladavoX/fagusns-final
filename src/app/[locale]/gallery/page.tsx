@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { getGalleryPath } from "@/lib/service-pages";
 import GalleryGrid from "../../../components/gallery-grid";
 
 export async function generateMetadata({
@@ -12,7 +13,7 @@ export async function generateMetadata({
   const tSeo = await getTranslations({ locale, namespace: "seo" });
   const title = tSeo("galleryTitle");
   const description = tSeo("galleryDescription");
-  const canonicalPath = `/${locale}/gallery`;
+  const canonicalPath = getGalleryPath(locale);
   const alternateLocale = routing.locales.filter(
     (routingLocale) => routingLocale !== locale,
   );
@@ -24,10 +25,10 @@ export async function generateMetadata({
     alternates: {
       canonical: canonicalPath,
       languages: {
-        sr: "/sr/gallery",
-        en: "/en/gallery",
-        ru: "/ru/gallery",
-        "x-default": "/sr/gallery",
+        sr: getGalleryPath("sr"),
+        en: getGalleryPath("en"),
+        ru: getGalleryPath("ru"),
+        "x-default": getGalleryPath("sr"),
       },
     },
     openGraph: {

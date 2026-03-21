@@ -2,6 +2,11 @@ import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { getLocale, getTranslations } from "next-intl/server";
+import {
+  getServicePage,
+  getServicePath,
+  servicePages,
+} from "@/lib/service-pages";
 import { ModeToggle } from "./mode-toggle";
 import NavLink from "./nav-link";
 import { Button } from "./ui/button";
@@ -26,6 +31,14 @@ export default async function Navbar() {
     getTranslations("navbar"),
     getLocale(),
   ]);
+  const serviceLinks = servicePages
+    .map((service) => ({
+      href: getServicePath(locale, service.key),
+      label: getServicePage(locale, service.key).label,
+    }))
+    .filter((service): service is { href: string; label: string } =>
+      Boolean(service.href),
+    );
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 border-b border-border py-4 flex items-center justify-between bg-background backdrop-blur-sm">
@@ -53,6 +66,22 @@ export default async function Navbar() {
                 <NavLink href={item.path}>{t(item.name)}</NavLink>
               </li>
             ))}
+            <li>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="link" size="sm">
+                    {t("ServicePages")}
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                  {serviceLinks.map((service) => (
+                    <DropdownMenuItem key={service.href} asChild>
+                      <Link href={service.href}>{service.label}</Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </li>
           </ul>
           <ul className="flex items-center gap-2">
             {locale !== "sr" && (
@@ -132,6 +161,12 @@ export default async function Navbar() {
               {navigation.map((item) => (
                 <DropdownMenuItem key={item.name}>
                   <NavLink href={item.path}>{t(item.name)}</NavLink>
+                </DropdownMenuItem>
+              ))}
+              <DropdownMenuSeparator />
+              {serviceLinks.map((service) => (
+                <DropdownMenuItem key={service.href} asChild>
+                  <Link href={service.href}>{service.label}</Link>
                 </DropdownMenuItem>
               ))}
               <DropdownMenuSeparator />
